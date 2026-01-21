@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chat Book</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0&icon_names=account_circle"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left_container">
+        <ul>
+          <li class="home bold_color">Home</li>
+          <li class="profile">Profile</li>
+          <li>Posts</li>
+          <li>Settings</li>
+        </ul>
+      </div>
+
+      <div class="middle_container">
+        <!-- Middle Column -->
+        <div class="middle">
+          <img src="/307ce493-b254-4b2d-8ba4-d12c080d6651.jpg" width="80px" />
+          <div class="story_icon"></div>
+          <div class="story_icon"></div>
+          <div class="story_icon"></div>
+          <div class="story_icon"></div>
+          <div class="story_icon"></div>
+          <div class="story_icon"></div>
+          <div class="story_icon"></div>
+        </div>
+
+        <div class="post">
+          <div class="post_heading">
+            <span class="material-symbols-outlined"> account_circle </span>
+            <div>
+              <h3>Rahul</h3>
+              <p>Sirsa, Haryana</p>
+            </div>
+          </div>
+          <div class="post_img">
+            <img src="/image copy.png" alt="" width="100%" height="70%" />
+          </div>
+          <div class="post_token">
+            <p><i class="fa-regular fa-thumbs-up"></i>like</p>
+            <p><i class="fa-regular fa-comment"></i>comment</p>
+            <p><i class="fa-solid fa-plus"></i>Repost</p>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post_heading">
+            <span class="material-symbols-outlined"> account_circle </span>
+            <div>
+              <h3>Ankita</h3>
+              <p>Mohali, Chandigarh</p>
+            </div>
+          </div>
+          <div class="post_img">
+            <img src="/image copy.png" alt="" width="100%" height="70%" />
+          </div>
+          <div class="post_token">
+            <p><i class="fa-regular fa-thumbs-up"></i>like</p>
+            <p><i class="fa-regular fa-comment"></i>comment</p>
+            <p><i class="fa-solid fa-plus"></i>Repost</p>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post_heading">
+            <span class="material-symbols-outlined"> account_circle </span>
+            <div>
+              <h3>Nitkisha</h3>
+              <p>Rohtak, Haryana</p>
+            </div>
+          </div>
+          <div class="post_img">
+            <img src="/image copy.png" alt="" width="100%" height="70%" />
+          </div>
+          <div class="post_token">
+            <p><i class="fa-regular fa-thumbs-up"></i>like</p>
+            <p><i class="fa-regular fa-comment"></i>comment</p>
+            <p><i class="fa-solid fa-plus"></i>Repost</p>
+          </div>
+        </div>
+      </div>
+      <div class="profile_section nodisplay">
+        <div class="profile">
+          <img
+            src="/307ce493-b254-4b2d-8ba4-d12c080d6651.jpg"
+            alt="Profile Image"
+            width="100px"
+          />
+          <div class="prfile_text">
+            <div>
+              <h1>Aditya</h1>
+              <p>Sirsa, Haryana</p>
+            </div>
+            <button onclick="openEdit()">edit</button>
+          </div>
+        </div>
+        <div class="bio_section">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas iste,
+            quis quos iusto, numquam autem repudiandae porro in soluta
+            consequatur unde dolor obcaecati provident, adipisci reiciendis
+            nulla esse sit totam tenetur quasi error nobis. Hic enim eaque quas
+            necessitatibus veniam recusandae consequuntur? Assumenda mollitia
+            velit tempore eveniet quibusdam alias, quae, commodi eligendi
+            blanditiis, fuga atque? Tempora cumque velit porro sint! Quod
+            necessitatibus, esse, natus quibusdam facere dolor excepturi
+            impedit, molestias maxime sit tenetur officiis non? Neque excepturi
+            doloremque, nostrum possimus quisquam, rerum beatae cumque eius,
+            nulla at sequi est! Assumenda sapiente natus ipsam voluptatum, earum
+            aperiam omnis esse optio at.
+          </p>
+        </div>
+      </div>
+      <!-- Right Column -->
+      <div class="right">
+        <h3>Friends</h3>
+        <ul>
+          <li>
+            <span class="material-symbols-outlined"> account_circle </span>Rahul
+          </li>
+          <li>
+            <span class="material-symbols-outlined"> account_circle </span>Neha
+          </li>
+          <li>
+            <span class="material-symbols-outlined"> account_circle </span>Amit
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="edit_section nodisplay">
+      <div>
+        <h1>Edit Profile</h1>
+        <button onclick="closeEdit()">close</button>
+      </div>
+      <label for="">Name</label>
+      <input
+        type="text"
+        placeholder="Enter your name"
+        name="name"
+        class="nameInput"
+      />
+      <label for="">Location</label>
+      <input
+        type="text"
+        placeholder="Enter your location"
+        name="location"
+        class="locationInput"
+      />
+      <label for="">Bio</label>
+      <textarea name="bio" id="bio" class="bioInput"></textarea>
+      <button onclick="updateProfile()">Submit</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
