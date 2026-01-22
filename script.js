@@ -1,5 +1,7 @@
 let editSection = document.querySelector(".edit_section");
 let container = document.querySelector(".container");
+let leftContainer = document.querySelector(".left_container");
+let rightContainer = document.querySelector(".right");
 function updateProfile() {
   let name = document.querySelector(".nameInput").value;
   let bio = document.querySelector(".bioInput").value;
@@ -15,6 +17,8 @@ function updateProfile() {
   }
   editSection.classList.add("nodisplay");
   container.style.filter = "blur(0px)";
+  leftContainer.style.filter = "blur(0px)";
+  rightContainer.style.filter = "blur(0px)";
 }
 
 let home = document.querySelector(".home");
@@ -43,8 +47,12 @@ function openEdit() {
     document.querySelector(".prfile_text p").innerText;
   editSection.classList.remove("nodisplay");
   container.style.filter = "blur(8px)";
+  leftContainer.style.filter = "blur(8px)";
+  rightContainer.style.filter = "blur(8px)";
 }
 function closeEdit() {
   editSection.classList.add("nodisplay");
   container.style.filter = "blur(0px)";
+  leftContainer.style.filter = "blur(0px)";
+  rightContainer.style.filter = "blur(0px)";
 }
